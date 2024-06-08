@@ -6,7 +6,7 @@ import time
 pyautogui.PAUSE = 0.005
 
 # Görüntüyü yükleme ve HSV değerlerini belirleme
-image_path = 'image.PNG'
+image_path = './images/image.PNG'
 image = cv2.imread(image_path)
 hsv_image = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
 
