@@ -31,6 +31,8 @@ Ensure that the game window is visible and in focus for the script to function c
 
 ## Running Click_Claim.py
 
+Before you run you should activate my venv environment:
+
 To run the Click_Claim.py script, use:
 
 ```sh
@@ -42,6 +44,20 @@ python Click_Claim.py
 - Click c to continue the script
 
 ## Running Just_Purple_CircleClick.py
+
+Before you run you should activate my venv environment:
+
+In Windows
+
+```sh
+.\venv\Scripts\activate
+```
+
+On Linux & macOS
+
+```sh
+source venv/bin/activate
+```
 
 To run the Just_Purple_CircleClick.py script, use:
 
