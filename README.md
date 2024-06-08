@@ -11,6 +11,7 @@ PixelTap Auto Combat is a Python script designed to automate combat sequences in
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
 - [Contact](#contact)
+- [Demo](#demo)
 
 ## Installation
 
@@ -23,8 +24,6 @@ pip install -r requirements.txt
 
 ```
 
-
-### Part 3: Usage
 
 ## Usage
 
@@ -101,3 +100,10 @@ If you have any questions, feel free to reach out:
 ---
 
 Thank you for using PixelTap Auto Combat! Enjoy automating your game battles!
+
+
+## Demo
+
+Watch the demo video below to see PixelTap Auto Combat in action:
+
+[![PixelTap Auto Combat Demo](https://img.youtube.com/vi/DDgz_zqFVxo/0.jpg)](https://www.youtube.com/watch?v=DDgz_zqFVxo)
