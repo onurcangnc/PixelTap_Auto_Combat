@@ -10,7 +10,7 @@ pyautogui.PAUSE = 0.005
 IMAGE_PATH = './images/image.PNG'
 LOWER_PINK = np.array([140, 50, 50])
 UPPER_PINK = np.array([170, 255, 255])
-CLICK_COUNT = 48
+CLICK_COUNT = 11
 SLEEP_INTERVAL = 1
 BRIGHT_YELLOW_PATH = './images/brightyellow.PNG'
 COMBAT_PATH = './images/combat.PNG'
@@ -160,6 +160,19 @@ def main():
     
     # Click pink circle until newgame.PNG or exit.PNG is detected
     while not (check_image_on_screen(NEW_GAME_PATH) or check_image_on_screen(EXIT_PATH)):
+        click_pink_circle()
+
+    # New logic to wait for wait.PNG after clicking newgame.PNG
+    if find_and_click_image(NEW_GAME_PATH):
+        # Wait for wait.PNG
+        while not check_image_on_screen(WAIT_PATH):
+            logging.info("Waiting for wait.PNG to appear...")
+
+        # Wait for 3 seconds
+        logging.info("Waiting for 3 seconds after wait.PNG appeared...")
+        time.sleep(2)
+
+        # Start clicking pink circle
         click_pink_circle()
 
     try:
